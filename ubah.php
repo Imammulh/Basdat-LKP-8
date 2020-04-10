@@ -1,5 +1,6 @@
 <?php
-	include("config.php");
+	$conn = include("config.php");
+	include("prosesubah.php");
 	
     if( isset($_GET['id']) ){
 		$id = $_GET['id'];
@@ -14,7 +15,6 @@
 		$lk = false;
 		$pr = true;
 	}
-	
 ?>
 
 <!DOCTYPE html>

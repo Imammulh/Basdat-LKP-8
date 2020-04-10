@@ -18,6 +18,18 @@
 
 	<br>
 
+	<?php if(isset($_GET['status'])): ?>
+	<p>
+		<?php
+			if($_GET['status'] == 'sukses'){
+				echo "Update data siswa berhasil!";
+			} else {
+				echo "Update data siswa gagal!";
+			}
+		?>
+	</p>
+	<?php endif; ?>
+	
 	<table border="1">
 	<thead>
 		<tr>
